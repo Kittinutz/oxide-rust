@@ -1,6 +1,5 @@
 using System;
-using Oxide.*;
-
+using Oxide.Core;
 namespace Oxide.CovalencePlugin
 {
     [Info("Police", "birthdates", "2.2.3")]
