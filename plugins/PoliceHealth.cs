@@ -24,10 +24,7 @@ namespace Oxide.Plugins
 
           private void OnUserConnected(IPlayer player)
         {
-            if (player.HasPermission("Police"))
-            {
-                player.MaxHealth = 300f;
-            }
+          player.MaxHealth = 300f;
         }
   
 
