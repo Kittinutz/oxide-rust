@@ -1,6 +1,6 @@
 using System;
 
-namespace Oxide.Plugins
+namespace Oxide.CovalencePlugin
 {
     [Info("Police", "birthdates", "2.2.3")]
     [Description("Ability to customize the max health")]
