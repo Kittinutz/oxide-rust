@@ -1,9 +1,15 @@
-using System;
-using Oxide.Plugins;
+using Newtonsoft.Json;
 using Oxide.Core;
-using Oxide.Core.Libraries.Covalence;
-
-namespace Oxide.CovalencePlugin
+using Oxide.Core.Configuration;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
+using Oxide.Core.Plugins;
+using UnityEngine;
+using Physics = UnityEngine.Physics;
+namespace Oxide.Plugins
 {
     [Info("Police", "birthdates", "2.2.3")]
     [Description("Ability to customize the max health")]
@@ -14,7 +20,7 @@ namespace Oxide.CovalencePlugin
             permission.RegisterPermission("Police", this);
         }
 
-          private void OnUserConnected(IPlayer player)
+          private void OnUserConnected(BasePlayer player)
         {
             if (player.HasPermission("Police"))
             {
