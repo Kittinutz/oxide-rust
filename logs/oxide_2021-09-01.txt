@@ -18,3 +18,4 @@
 15:15 [Info] Loaded plugin Unity v2.0.3772 by Oxide Team and Contributors
 15:23 [Info] IP address from external API: 34.72.234.250
 15:25 [Info] Usage: oxide.reload *|<pluginname>+
+15:30 [Error] BetterHealth plugin requires missing dependency: Coroutines
