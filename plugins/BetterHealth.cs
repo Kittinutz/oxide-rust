@@ -54,7 +54,7 @@ namespace Oxide.Plugins
 
         private void OnPlayerRespawned(BasePlayer player)
         {
-            [Info("Spwnß", "birthdates", "3.0.8")]
+            PrintToChat('the player spawn')
             SetHealth(player);
         }
 
