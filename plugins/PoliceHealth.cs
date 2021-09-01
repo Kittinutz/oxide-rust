@@ -2,7 +2,7 @@ namespace Oxide.Plugins
 {
     [Info("Police", "birthdates", "2.2.3")]
     [Description("Ability to customize the max health")]
-    public class PoliceHealth : CovalencePlugin
+    public class PoliceHealth : RustPlugin
     {
         private void Init()
         {
