@@ -3,7 +3,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Newtonsoft.Json;
 
 namespace Oxide.Plugins
 {
@@ -30,4 +29,3 @@ namespace Oxide.Plugins
 
     }
 }
-//Generated with birthdates' Plugin Maker
