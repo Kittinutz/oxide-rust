@@ -13,24 +13,10 @@ namespace Oxide.Plugins
         {
             if (player.HasPermission("Police"))
             {
-                player.maxHealth = 300f
+                player.maxHealth = 300f;
             }
         }
   
-        // private void OnPlayerRespawned(BasePlayer player)
-        // {
-        //     SetHealth(player);
-        // }
-
-        // private void SetHealth(BasePlayer player)
-        // {
-        //   if(player.HasPermission('police')){
-        //     Debug.Writeline('helloworld');
-        //   }
-        //   Debug.Writeline('helloworld2');
-
-          
-        // }
 
     }
 }
