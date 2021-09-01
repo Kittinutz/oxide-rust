@@ -1,6 +1,5 @@
 using Newtonsoft.Json;
 using Oxide.Core;
-using Oxide.Core.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +7,9 @@ using System.Text;
 using System.Text.RegularExpressions;
 using Oxide.Core.Plugins;
 using UnityEngine;
-using Physics = UnityEngine.Physics;
+using Oxide.Core;
+using Oxide.Core.Libraries.Covalence;
+using Oxide.Core.Plugins;
 namespace Oxide.Plugins
 {
     [Info("Police", "birthdates", "2.2.3")]
@@ -20,7 +21,7 @@ namespace Oxide.Plugins
             permission.RegisterPermission("Police", this);
         }
 
-          private void OnUserConnected(BasePlayer player)
+          private void OnUserConnected(IPlayer player)
         {
             if (player.HasPermission("Police"))
             {
