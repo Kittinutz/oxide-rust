@@ -1,14 +1,8 @@
-//Requires: Coroutines
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
 namespace Oxide.Plugins
 {
     [Info("Police", "birthdates", "2.2.3")]
     [Description("Ability to customize the max health")]
-    public class PoliceHealth : RustPlugin
+    public class PoliceHealth : CovalencePlugin
     {
         private void Init()
         {
