@@ -26,13 +26,13 @@ namespace Oxide.Plugins
         {
             Puts("OnUserRespawn works!");
             player.Health = 50f;
-            player.MaxHealth = 3000f;
+            player.MaxHealth = 1f;
         } 
 
           private void OnUserConnected(IPlayer player)
         {
           player.Health = 05f;
-          player.MaxHealth = 300f;
+          player.MaxHealth = 1;
         }
   
 
