@@ -25,19 +25,22 @@ namespace Oxide.Plugins
         private void OnUserRespawn(IPlayer player)
         {
             Puts("OnUserRespawn works!");
-            player.Health = 50f;
-            player.MaxHealth = 1f;
+            // player.Health = 50f;
+            // player.MaxHealth = 1f;
         } 
-
-        private void OnUserRespawned(IPlayer player)
-        {
-            Puts("OnUserRespawned works!");
-        }
-
         void OnPlayerRespawned(BasePlayer player)
         {
             Puts("OnPlayerRespawned works!");
+            // player.Health = 50f;
+            // player.MaxHealth = 300f;
         }
+
+        private void OnUserConnected(IPlayer player)
+        {
+          player.Health = 05f;
+          player.MaxHealth = 300f;
+        }
+  
 
     }
 }
