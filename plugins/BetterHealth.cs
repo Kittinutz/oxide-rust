@@ -26,6 +26,7 @@ namespace Oxide.Plugins
         /// <returns>The default max health or the highest max health they have permission to</returns>
         private float GetMaxHealth(BasePlayer player)
         {
+            Trace.Write("Invalid object. ");
             //filter permissions & sort
             var healthPermission = _config.Permissions.Where(p => player.IPlayer.HasPermission($"betterhealth.{p.Key}"))
                 .OrderBy(entry => entry.Value).FirstOrDefault();
@@ -105,6 +106,7 @@ namespace Oxide.Plugins
         /// <param name="player">Target player</param>
         private void SetHealth(BasePlayer player)
         {
+
             if (player == null || player.modifiers == null || !player.IPlayer.HasPermission(PermissionUse)) return;
             var startHealth = player.StartMaxHealth();
             var maxHealth = GetMaxHealth(player);
