@@ -41,7 +41,10 @@ namespace Oxide.Plugins
             permission.RegisterPermission(PermissionUse, this);
             LoadConfig();
 
-            foreach (var perm in _config.Permissions.Keys.Select(p => $"betterhealth.{p}")
+            foreach (var perm in _config.Permissions.Keys.Select(p => {
+                Puts(p);
+                return $"betterhealth.{p}";
+            })
                 .Where(perm => !permission.PermissionExists(perm, this))) permission.RegisterPermission(perm, this);
         }
 
@@ -148,7 +151,8 @@ namespace Oxide.Plugins
             [JsonProperty("Max Health Permissions")]
             public Dictionary<string, float> Permissions = new Dictionary<string, float>
             {
-                {"vip", 300f}
+                {"vip", 300f},
+                {"Police", 300f}
             };
         }
 
