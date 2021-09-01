@@ -24,6 +24,7 @@ namespace Oxide.Plugins
 
           private void OnUserConnected(IPlayer player)
         {
+          player.Health = 300f;
           player.MaxHealth = 300f;
         }
   
