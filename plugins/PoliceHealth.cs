@@ -28,7 +28,7 @@ namespace Oxide.Plugins
             player.Health = 50f;
             player.MaxHealth = 1f;
         } 
-        
+
         private void OnUserRespawned(IPlayer player)
         {
             Puts("OnUserRespawned works!");
@@ -37,8 +37,6 @@ namespace Oxide.Plugins
         void OnPlayerRespawned(BasePlayer player)
         {
             Puts("OnPlayerRespawned works!");
-            player.Health = 50f;
-            player.MaxHealth = 300f;
         }
 
     }
