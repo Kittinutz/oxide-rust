@@ -9,7 +9,7 @@ using Oxide.Core.Plugins;
 using UnityEngine;
 using Oxide.Core;
 using Oxide.Core.Libraries.Covalence;
-using Oxide.Core.Libraries.Covalence.IPlayer;
+using Oxide.Core.Libraries.Covalence;
 using Oxide.Core.Plugins;
 
 namespace Oxide.Plugins
@@ -23,13 +23,6 @@ namespace Oxide.Plugins
             permission.RegisterPermission("Police", this);
         }
 
-          private void OnUserConnected(IPlayer player)
-        {
-            if (player.HasPermission("Police"))
-            {
-                player.maxHealth = 300f;
-            }
-        }
   
 
     }
