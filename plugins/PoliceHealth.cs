@@ -22,6 +22,13 @@ namespace Oxide.Plugins
             permission.RegisterPermission("Police", this);
         }
 
+        void OnUserRespawn(IPlayer player)
+        {
+            Puts("OnUserRespawn works!");
+            player.Health = 300f;
+            player.MaxHealth = 300f;
+        } 
+
           private void OnUserConnected(IPlayer player)
         {
           player.Health = 300f;
