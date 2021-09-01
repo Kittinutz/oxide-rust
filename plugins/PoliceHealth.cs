@@ -35,11 +35,6 @@ namespace Oxide.Plugins
             player.MaxHealth = 300f;
         }
 
-          private void OnUserConnected(IPlayer player)
-        {
-          player.Health = 05f;
-          player.MaxHealth = 1;
-        }
   
 
     }
