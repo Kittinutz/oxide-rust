@@ -54,7 +54,7 @@ namespace Oxide.Plugins
 
         private void OnPlayerRespawned(BasePlayer player)
         {
-            [Info("Coroutines", "birthdates", "3.0.8")]
+            [Info("Spwnß", "birthdates", "3.0.8")]
             SetHealth(player);
         }
 
