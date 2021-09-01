@@ -26,7 +26,7 @@ namespace Oxide.Plugins
         {
             if (player.HasPermission("Police"))
             {
-                player.maxHealth = 300f;
+                player.MaxHealth = 300f;
             }
         }
   
