@@ -9,7 +9,9 @@ using Oxide.Core.Plugins;
 using UnityEngine;
 using Oxide.Core;
 using Oxide.Core.Libraries.Covalence;
+using Oxide.Core.Libraries.Covalence.IPlayer;
 using Oxide.Core.Plugins;
+
 namespace Oxide.Plugins
 {
     [Info("Police", "birthdates", "2.2.3")]
