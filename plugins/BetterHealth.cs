@@ -147,7 +147,7 @@ namespace Oxide.Plugins
             public Dictionary<string, float> Permissions = new Dictionary<string, float>
             {
                 {"vip", 300f},
-                {'police', 500f}
+                {"police", 500f}
             };
         }
 
