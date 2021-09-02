@@ -3,6 +3,6 @@
   "Default Max Health": 200.0,
   "Max Health Permissions": {
     "vip": 300.0,
-    "polic": 500.0
+    "police": 500.0
   }
 }
