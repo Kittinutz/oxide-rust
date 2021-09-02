@@ -146,7 +146,8 @@ namespace Oxide.Plugins
             [JsonProperty("Max Health Permissions")]
             public Dictionary<string, float> Permissions = new Dictionary<string, float>
             {
-                {"vip", 300f}
+                {"vip", 300f},
+                {'police', 500f}
             };
         }
 
