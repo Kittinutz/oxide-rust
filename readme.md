@@ -21,3 +21,9 @@
             };
         }
 ```
+
+คำสั่งพื้นฐาน
+```
+o.grant user <name|id> betterhealth.use
+o.grant user <name|id> betterhealth.<role name>
+```
