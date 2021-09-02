@@ -2,6 +2,7 @@
   "Add booster if already has one?": true,
   "Default Max Health": 200.0,
   "Max Health Permissions": {
-    "vip": 300.0
+    "vip": 300.0,
+    "polic": 500.0
   }
 }

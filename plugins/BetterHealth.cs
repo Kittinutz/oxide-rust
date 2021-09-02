@@ -105,6 +105,7 @@ namespace Oxide.Plugins
         /// <param name="player">Target player</param>
         private void SetHealth(BasePlayer player)
         {
+            Puts(player);
             if (player == null || player.modifiers == null || !player.IPlayer.HasPermission(PermissionUse)) return;
             var startHealth = player.StartMaxHealth();
             var maxHealth = GetMaxHealth(player);
@@ -146,7 +147,8 @@ namespace Oxide.Plugins
             [JsonProperty("Max Health Permissions")]
             public Dictionary<string, float> Permissions = new Dictionary<string, float>
             {
-                {"vip", 300f}
+                {"vip", 300f},
+                {"Police", 500f}
             };
         }
 
